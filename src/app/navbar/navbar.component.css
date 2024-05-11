@@ -1,0 +1,98 @@
+.account-button {
+    border: none;
+    background-color: transparent;
+}
+
+.login-button {
+    background-color: rgb(6, 156, 220);
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3 background-color;
+}
+
+.login-button:hover {
+    background-color: aqua;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size: 32px;
+    color: rgb(6, 156, 220);
+    position: relative;
+    top: 3px;
+    padding-left: 10px;
+  }
+
+.navbar{
+    /* background-color: white; */
+    background: transparent;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    font-family: 'Prompt', sans-serif;
+    /* box-shadow: 0 10px 30px  rgba(0, 0, 0, 0.1); */
+}
+
+.navbar-brand{
+    font-weight: 500;
+    color: rgb(2, 99, 147);;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: rgb(0, 108, 162);
+    font-weight: 500;
+    position: relative;
+    right: 53px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: black;
+}
+
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: rgb(6, 156, 220);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+/* 
+.offcanvas{
+    background: transparent;
+    backdrop-filter: blur(20px);
+} */
